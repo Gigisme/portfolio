@@ -1,0 +1,31 @@
+{
+  "about": {
+    "title": "About me",
+    "text": "I am determined and motivated, always eager to learn and grow. In my free time, I enjoy coding and exploring the latest technology, with a particular interest in software development. While studying, I developed my critical thinking, problem-solving, and teamwork skills through coursework and team projects. I often take on the role of team leader during collaborative projects. I am committed to improving my skills and knowledge and am excited to continue my career in software development."
+  },
+  "jobTitle": "Software engineering student",
+  "education": {
+    "uni": {
+      "title": "Kaunas University of Technology",
+      "content": "Software engineering",
+      "date": "2021 - currently studying"
+    },
+    "school1": {
+      "title": "Kaunas University of Technology Gymnasium",
+      "content": "Secondary education"
+    },
+    "school2": {
+      "title": "Kaunas Jonas and Petras Vileisiai school",
+      "content": "Primary education"
+    }
+  },
+  "skills": {
+  },
+  "languages": {
+    "title": "Languages",
+    "english": "English - C1",
+    "lithuanian": "Lithuanian - native"
+  },
+  "now": "Now",
+  "contacts": "Contacts"
+}
