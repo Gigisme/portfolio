@@ -11,7 +11,7 @@ const navClick = (navElement: string): void => {
 </script>
 
 <template>
-    <div class="header flex justify-between">
+    <div class="header flex justify-between pb-2 md:pb-4">
         <h3>{{ selectedComponent }}</h3>
         <div class="button-row flex justify-between">
             <button :class="{ active: selectedComponent == 'About'}" @click="navClick('About')">About</button>
@@ -20,16 +20,26 @@ const navClick = (navElement: string): void => {
             </button>
         </div>
     </div>
-    <br class="">
     <About v-if="selectedComponent == 'About'"></About>
     <Resume v-if="selectedComponent == 'Resume'"></Resume>
 </template>
 
 <style scoped>
+@media (min-width: 768px) {
+    .button-row {
+        margin: -20px -20px 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .button-row {
+        margin: -20px -10px 0 0;
+    }
+}
+
 .button-row {
     background-color: #292929;
     padding: 10px;
-    margin: -20px -20px 0 0;
     border-radius: 0 8px 0 20px;
 }
 
