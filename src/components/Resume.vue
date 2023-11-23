@@ -28,36 +28,57 @@ const t = inject("translate");
         </li>
         <li class="timeline-item">
             <div class="item-title">
-                {{ t("education.uni.title") }}
+                {{
+                    // @ts-ignore 18046
+                    t("education.uni.title")
+                }}
             </div>
             <div class="timestamp">
-                {{ t("education.uni.date") }}
+                {{
+                    // @ts-ignore 18046
+                    t("education.uni.date")
+                }}
             </div>
             <div class="item-content">
-                {{ t("education.uni.content") }}
+                {{
+                    // @ts-ignore 18046
+                    t("education.uni.content")
+                }}
             </div>
         </li>
 
         <li class="timeline-item">
             <div class="item-title">
-                {{ t("education.school1.title") }}
+                {{
+                    // @ts-ignore 18046
+                    t("education.school1.title")
+                }}
             </div>
             <div class="timestamp">
                 2015 - 2019
             </div>
             <div class="item-content">
-                {{ t("education.school1.content") }}
+                {{
+                    // @ts-ignore 18046
+                    t("education.school1.content")
+                }}
             </div>
         </li>
         <li class="timeline-item">
             <div class="item-title">
-                {{ t("education.school2.title") }}
+                {{
+                    // @ts-ignore 18046
+                    t("education.school2.title")
+                }}
             </div>
             <div class="timestamp">
                 2007 - 2015
             </div>
             <div class="item-content">
-                {{ t("education.school2.content") }}
+                {{
+                    // @ts-ignore 18046
+                    t("education.school2.content")
+                }}
             </div>
         </li>
     </ul>
@@ -123,7 +144,7 @@ ul.timeline li::after {
     border: 1px solid #383838;
     width: 0;
     left: 48px;
-    bottom: 0px;
+    bottom: 0;
 }
 
 ul.timeline li:last-child::after {
@@ -141,7 +162,7 @@ ul.timeline li:first-child::after {
     width: 0;
     left: 48px;
     top: 55px;
-    bottom: 0px;
+    bottom: 0;
     height: 28px;
 }
 

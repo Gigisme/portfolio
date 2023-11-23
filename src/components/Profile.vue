@@ -2,7 +2,7 @@
 import {inject} from "vue";
 
 const t = inject('translate');
-const changeLanguage = inject('changeLang')
+const changeLanguage = inject('changeLang');
 
 interface language {
     title: string;
@@ -28,7 +28,10 @@ const languages: language[] = [
     <div class="profile flex flex-col pb-5">
         <img alt="Profile Picture" src="../assets/blank_profile.webp">
         <h2 class="text-2xl font-bold pb-2">Mindaugas Kulinas</h2>
-        <p>{{ t("jobTitle") }}</p>
+        <p>{{
+                // @ts-ignore 18046
+                t("jobTitle")
+            }}</p>
     </div>
 
     <div class="social">
@@ -48,12 +51,16 @@ const languages: language[] = [
         </a>
     </div>
     <div class="mt-4">
-        <h3 class="text-xl font-bold ml-16">{{ t('contacts') }}</h3>
+        <h3 class="text-xl font-bold ml-16">{{
+                // @ts-ignore 18046
+                t('contacts')
+            }}</h3>
         <p> +370 632 43296</p>
         <p>kulinasmindaugas@gmail.com</p>
     </div>
     <div class="button-row">
-        <button v-for="lang in languages" :key="lang.short" @click="changeLanguage(lang.short)">
+        <button v-for="lang in languages" :key="lang.short" @click="// @ts-ignore 18046
+        changeLanguage(lang.short)">
             {{ lang.flag }}
         </button>
     </div>
