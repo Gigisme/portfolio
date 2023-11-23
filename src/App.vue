@@ -18,7 +18,7 @@ provide('changeLang', changeLanguage)
     <div
         class="flex flex-col md:flex-row text-white mt-5 mb-5 md:m-10 gap-5 w-full justify-center items-center md:items-stretch">
         <aside
-            class="flex flex-col items-center my-container border-2 rounded-xl h-140 md:sticky w-fit top-5 p-5">
+            class="flex flex-col items-center my-container border-2 rounded-xl h-fit md:sticky w-fit top-5 p-5">
             <Profile></Profile>
         </aside>
         <div class="my-container rounded-xl border-2 p-2 pt-5 md:p-5 md:w-1/2">

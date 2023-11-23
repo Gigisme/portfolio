@@ -2,6 +2,7 @@
 import {ref} from "vue";
 import Resume from "./Resume.vue";
 import About from "./About.vue";
+import Portfolio from "./Portfolio.vue";
 
 let selectedComponent = ref('About');
 
@@ -22,6 +23,7 @@ const navClick = (navElement: string): void => {
     </div>
     <About v-if="selectedComponent == 'About'"></About>
     <Resume v-if="selectedComponent == 'Resume'"></Resume>
+    <Portfolio v-if="selectedComponent == 'Portfolio'"></Portfolio>
 </template>
 
 <style scoped>
