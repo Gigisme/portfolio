@@ -21,6 +21,8 @@ jobs:
       
     - name: Copy build to another branch
       run: |
+        git config --global user.email "kulinasmindaugas@gmail.com"
+        git config --global user.name "Mindaugas Kulinas"
         git checkout -b built-project
         git add dist/ -f
         git commit -m "Built project from main branch"
