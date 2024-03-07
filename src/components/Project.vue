@@ -3,11 +3,12 @@ defineProps<{
     name: string,
     description?: string,
     image?: string,
+    link: string,
 }>()
 </script>
 
 <template>
-    <a href="https://github.com/Gigisme/advent-of-code-2022"
+    <a :href="link"
        target="_blank">
         <h2 class="font-bold text-center">{{ name }}</h2>
         <img :src="image"

@@ -58,7 +58,7 @@ const languages: language[] = [
         <p> +370 632 43296</p>
         <p>kulinasmindaugas@gmail.com</p>
     </div>
-    <div class="button-row">
+    <div class="flex flex-row gap-5">
         <button v-for="lang in languages" :key="lang.short" @click="// @ts-ignore 18046
         changeLanguage(lang.short)">
             {{ lang.flag }}
