@@ -1,5 +1,8 @@
 <script lang="ts" setup>
 import Project from "./Project.vue";
+import portfolio_image from "../assets/portfolio.png"
+import task_image from "../assets/task-manager.png"
+
 
 const projects = [
     {
@@ -14,13 +17,13 @@ const projects = [
     {
         name: "Portfolio website",
         description: "This website",
-        image: "portfolio/src/assets/portfolio.png",
+        image: portfolio_image,
         link: "https://github.com/Gigisme/portfolio",
     },
     {
         name: "Task management website",
         description: "A website built using .NET 8 and Angular for managing and sharing tasks.",
-        image: "portfolio/src/assets/task-manager.png",
+        image: task_image,
         link: "https://github.com/Gigisme/task-management",
     }
 ]
