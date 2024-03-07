@@ -18,3 +18,10 @@ jobs:
 
     - name: Build project
       run: npm run build
+      
+    - name: Copy build to another branch
+      run: |
+        git checkout -b built-project
+        git add dist/
+        git commit -m "Built project from main branch"
+        git push origin built-project
