@@ -22,6 +22,6 @@ jobs:
     - name: Copy build to another branch
       run: |
         git checkout -b built-project
-        git add dist/
+        git add dist/ -f
         git commit -m "Built project from main branch"
         git push origin built-project
