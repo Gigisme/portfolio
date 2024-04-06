@@ -43,7 +43,7 @@ const languages: language[] = [
             <h2 class="pl-6 font-bold text-xl">Github</h2>
         </a>
         <a class="flex-row flex items-center justify-center mb-4"
-           href="https://www.linkedin.com/in/mindaugas-kulinas-778330189/"
+           href="https://www.linkedin.com/in/mindaugas-kulinas/"
            rel="noopener noreferrer"
            target="_blank">
             <img alt="" class="ml-5" src="../assets/LI-In-Bug.png">
