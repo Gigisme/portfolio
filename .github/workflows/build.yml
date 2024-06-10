@@ -27,6 +27,6 @@ jobs:
       env:
         REPO: self
         BRANCH: gh-pages
-        FOLDER: dist
+        FOLDER: dist/portfolio/browser
         GITHUB_TOKEN: ${{ secrets.PORTFOLIO_TOKEN }}
         MESSAGE: "Build: ({sha}) {msg}"
