@@ -1,23 +1,32 @@
 import {Component, OnInit} from '@angular/core';
 import {Project} from "../project.model";
 import {NgForOf} from "@angular/common";
-import {ProjectService} from "../project.service";
+import {ProjectService} from "../services/project.service";
+import {ProjectDialogComponent} from "../project-dialog/project-dialog.component";
+import {MatDialog} from "@angular/material/dialog";
 
 @Component({
-  selector: 'app-project',
-  standalone: true,
+    selector: 'app-project',
+    standalone: true,
     imports: [
         NgForOf
     ],
-  templateUrl: './project.component.html',
-  styleUrl: './project.component.css'
+    templateUrl: './project.component.html',
+    styleUrl: './project.component.css'
 })
 export class ProjectComponent implements OnInit {
     projects: Project[] = [];
 
-    constructor(private projectService: ProjectService) {}
+    constructor(private projectService: ProjectService, private dialog: MatDialog) {
+    }
 
     ngOnInit(): void {
-        this.projectService.getProjects().subscribe(projects => this.projects = projects);
+        this.projects = this.projectService.getProjects();
+    }
+
+    onClick(project: Project) {
+        this.dialog.open(ProjectDialogComponent, {
+            data: {project}
+        })
     }
 }
