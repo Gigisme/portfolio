@@ -22,8 +22,8 @@ export class ProjectService {
         {
             id: 2,
             name: 'Falling sand',
-            image: '',
-            description: 'sand'
+            image: 'assets/fallingsand.png',
+            description: 'This project is a falling sand simulation. It allows users to interact with a grid of particles, drawing and watching as they fall, settle, and interact based on simple physics rules.'
         },
     ];
 

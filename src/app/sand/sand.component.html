@@ -1,0 +1,15 @@
+<div class="p-5 max-w-full flex flex-row relative pr-10">
+    <canvas #canvas></canvas>
+    <div class="pl-3 absolute bottom-5 right-0">
+        <mat-button-toggle-group
+            [formControl]="cellSizeControl"
+            [hideSingleSelectionIndicator]="signal(false)"
+            vertical
+        >
+            <mat-button-toggle value = 20>4</mat-button-toggle>
+            <mat-button-toggle value = 15>3</mat-button-toggle>
+            <mat-button-toggle value = 10>2</mat-button-toggle>
+            <mat-button-toggle value = 5>1</mat-button-toggle>
+        </mat-button-toggle-group>
+    </div>
+</div>

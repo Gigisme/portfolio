@@ -4,6 +4,7 @@ import {NgForOf} from "@angular/common";
 import {ProjectService} from "../services/project.service";
 import {ProjectDialogComponent} from "../project-dialog/project-dialog.component";
 import {MatDialog} from "@angular/material/dialog";
+import {SandComponent} from "../sand/sand.component";
 
 @Component({
     selector: 'app-project',
@@ -25,6 +26,12 @@ export class ProjectComponent implements OnInit {
     }
 
     onClick(project: Project) {
+        if (project.id === 2) {
+            this.dialog.open(SandComponent, {
+                maxWidth: 'none',
+            })
+            return;
+        }
         this.dialog.open(ProjectDialogComponent, {
             data: {project}
         })
