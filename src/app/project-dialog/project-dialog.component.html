@@ -1,8 +1,15 @@
-<!-- project-dialog.component.html -->
 <h1 mat-dialog-title>{{ data.project.name }}</h1>
 <div mat-dialog-content>
     <p>{{ data.project.description }}</p>
 </div>
 <div mat-dialog-actions>
     <button mat-button mat-dialog-close>Close</button>
+</div>
+<div class="absolute bottom-4 left-4">
+    <a href="{{ data.project.repo }}"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="hover:text-blue-700 pl-1.5">
+        View on GitHub
+    </a>
 </div>
